@@ -1,0 +1,50 @@
+/************************************************************************/
+/*
+/* Hosting - WebHosting module for Xoops 
+/* Copyright (c) 2008 by gethostedhere.com               
+/* http://gethostedhere.com            
+/* admin@gethostedhere.com
+/************************************************************************/
+/* This program is distributed in the hope that it will be useful, but
+/* WITHOUT ANY WARRANTY; without even the implied warranty of
+/* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+/* General Public License for more details.
+/************************************************************************/
+
+
+** This module is written for Xoops only! **
+** Report all bugs to http://gethostedhere.com **
+
+**** INSTALLATION ****
+To install this module:
+
+1. Upload the contents of the 'modules' folder into your site root.
+
+2. Install this module just like any other Xoops module, from the Modules Administration menu.
+Once properly installed, you should see the Hosting icon on the left side of 
+your Xoops Admin screen.
+
+3. Go to Blocks Admin and scroll down to "ADD A NEW BLOCK" enter your desired title i.e. "Hosting Services" then Copy and Paste contents of Custom_Block.txt into the content portion of your new custom block.  
+
+3. You must now navigate to the following configuration file on your server and edit the data.
+      public_html/modules/hosting/template/config.php
+
+You must set all of the Config.php settings to match your needs.
+
+**** IMPORTANT ****
+
+If you wish to change the following credits link on this module:
+"Xoops Hosting Module Created by GetHostedHere.com"
+
+1. You must make a $20 donation to gethostedhere.com and recieve your unique paypal transaction ID.
+
+2. Place your transaction ID in the module/hosting/License.txt example: license="Paste Paypal ID Here"
+
+3. You are prohibited from deleting or moving license.txt from it's current directory.
+
+
+Enjoy, and be on the lookout for the next version!
+
+Name: gethostedhere.com
+Email: admin@gethostedhere.com
+Send Donations to: donations@gethostedhere.com (Paypal)

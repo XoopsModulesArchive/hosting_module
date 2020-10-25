@@ -1,0 +1,207 @@
+
+											<tr>
+												<td align="center">
+												<div align="center">
+													<table style="border-collapse: collapse;" id="table6" border="1" bordercolor="#c2e7ec" cellpadding="2" height="451" width="555">
+														<tbody><tr>
+															<td valign="top">
+															<div align="center">
+																<table id="table7" border="0" cellpadding="2" cellspacing="0" width="100%">
+																	<tbody><tr>
+																		<td height="375" valign="top">
+																		<div align="center">
+																			<table id="table52" border="0" cellspacing="0" width="98%">
+																				<tbody><tr>
+																					<td>
+																					&nbsp;</td>
+																				</tr>
+																				<tr>
+																					<td>
+																					<div align="center">
+																					<table id="table14" border="0" cellpadding="3" cellspacing="0" width="95%">
+											<tbody>
+                                              <tr>
+                                                                  <td width="50%" height="18" style="text-decoration: none; border: medium none">
+                                                                  </td>
+                                                                  <td width="50%" height="18" style="text-decoration: none; border: medium none">
+                                                                  </td>
+                                                                </tr>
+                                              <tr>
+                                                                  <td width="100%" height="18" colspan="2" style="text-decoration: none; border: medium none">
+      <p><font color="#666666"><b>You have ONE more step to complete! Please 
+      click the &quot;BUY NOW&quot; button next to the plan you want to complete the 
+      sign-up process.</b></font></p>
+                                                                  </td>
+                                                                  </tr>
+                                              <tr>
+                                                                  <td width="100%" height="18" colspan="2" style="text-decoration: none; border: medium none">
+      <p>
+      </p>
+                                                                  </td>
+                                                                  </tr>
+                                              <tr>
+                                                                  <td width="100%" height="18" colspan="2" style="text-decoration: none; border: medium none">
+      <p><font face="Tahoma"><b><font color="#666666">
+      <span style="font-size: 8pt">secure payment:</span></font></b><span style="font-size: 8pt">
+      </span></font>
+      </p>
+      <p><font face="Tahoma" style="font-size: 8pt">Please 
+                          click on the order button next to the plan you would 
+                          like to purchase. For your convenience we use PayPal. 
+                          Please continue after you have cleared payment to the 
+                          processing page to complete your hosting order.</font></p>
+                                                                  </td>
+                                                                  </tr>
+                                              <tr>
+                                                                  <td width="50%" height="18" style="text-decoration: none; border: medium none">
+                                                                  </td>
+                                                                  <td width="50%" height="18" style="text-decoration: none; border: medium none">
+                                                                  </td>
+                                                                </tr>
+                                              <tr>
+                                                                  <td width="100%" height="18" colspan="2" style="text-decoration: none; border: medium none">
+                                                                  <div align="center">
+                                                                    <center>
+                                                                    <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="80%" id="AutoNumber2">
+                                                                      <tr>
+                <td height="100%" style="text-decoration: none; border: medium none"> <div align="center"> 
+                    <table width="480" border="1" cellspacing="0" cellpadding="2" bordercolor="#000000">
+                      <tr bgcolor="#666666"> 
+                        <td colspan="5" width="472" bgcolor="#006699" style="text-decoration: none; border: medium none">
+                        <font face="Arial, Helvetica, sans-serif" color="#FFFFFF" style="font-size: 11pt"><b>Monthly 
+                          Plans</b></font></td>
+                      </tr>
+                      <tr bgcolor="#999999"> 
+                        <td width="152" style="text-decoration: none; border: medium none"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF">Hosting 
+                          Plan</font></b></td>
+                        <td width="70" style="text-decoration: none; border: medium none"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF">Space</font></b></td>
+                        <td width="75" style="text-decoration: none; border: medium none"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF">Bandwidth</font></b></td>
+                        <td width="64" style="text-decoration: none; border: medium none"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF">Monthly</font></b></td>
+                        <td width="87" style="text-decoration: none; border: medium none"> <div align="center"><b><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF">PayPal</font></b></div></td>
+                      </tr>
+                      <tr> 
+                        <td width="152" bgcolor="#F5F5F5" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 11pt">Starter</font></td>
+                        <td width="70" bgcolor="#E5E5E5" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 9pt"><? print $p1_space ?></font>&nbsp;</td>
+                        <td width="75" bgcolor="#F0F0F0" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 9pt">
+                        <? print $p1_transfer ?></font>&nbsp;</td>
+                        <td width="64" bgcolor="#006699" style="text-decoration: none; border: medium none"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF" size="2"><b>
+                        $</b></font><b><font face="Arial, Helvetica, sans-serif" size="2" color="#FFFFFF"><? print $p1_price ?></font></b></td>
+                        <td width="87" style="text-decoration: none; border: medium none"> <div align="center"> 
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                              <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                              <input type="hidden" name="business" value="<? print $paypal_email ?>">
+                              <input type="hidden" name="item_name" value="Starter Monthly hosting Plan at <? print $yoursite ?>">
+                              <input type="hidden" name="return" value="http://www.<? print $yoursite ?>/signup_thanks.php">
+                              <input type="hidden" name="cancel_return" value="http://www.<? print $yoursite ?>">
+                              <input type="hidden" name="no_note" value="1">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <p>
+                              <input type="image" src="images/pay2.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" width="73" height="44" style="text-decoration: none; border: medium none">
+                              <input type="hidden" name="a3" value="$<? print $p1_price ?>">
+                              <input type="hidden" name="p3" value="1">
+                              <input type="hidden" name="t3" value="M">
+                              <input type="hidden" name="src" value="1">
+                              <input type="hidden" name="sra" value="1">
+                              </p>
+                            </form>
+                          </div></td>
+                      </tr>
+                      <tr> 
+                        <td width="152" bgcolor="#F5F5F5" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 11pt">Semi-Pro</font></td>
+                        <td width="70" bgcolor="#E5E5E5" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 9pt"><? print $p2_space ?></font>&nbsp;</td>
+                        <td width="75" bgcolor="#F0F0F0" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 9pt"><? print $p2_transfer ?></font>&nbsp;</td>
+                        <td width="64" bgcolor="#006699" style="text-decoration: none; border: medium none"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF" size="2"><b>
+                        $<? print $p2_price ?></font></b></td>
+                        <td width="87" style="text-decoration: none; border: medium none"> <div align="center"> 
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                              <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                              <input type="hidden" name="business" value="<? print $paypal_email ?>">
+                              <input type="hidden" name="item_name" value="Semi-Pro Monthly Hosting Plan at <? print $yoursite ?>">
+                              <input type="hidden" name="return" value="http://www.<? print $yoursite ?>/signup_thanks.php">
+                              <input type="hidden" name="cancel_return" value="http://www.<? print $yoursite ?>">
+                              <input type="hidden" name="no_note" value="1">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <p>
+                              <input type="image" src="images/pay2.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" width="73" height="44" style="text-decoration: none; border: medium none">
+                              <input type="hidden" name="a3" value="$<? print $p2_price ?>">
+                              <input type="hidden" name="p3" value="1">
+                              <input type="hidden" name="t3" value="M">
+                              <input type="hidden" name="src" value="1">
+                              <input type="hidden" name="sra" value="1">
+                              </p>
+                            </form>
+                          </div></td>
+                      </tr>
+                      <tr> 
+                        <td width="152" bgcolor="#F5F5F5" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 11pt">Advanced</font></td>
+                        <td width="70" bgcolor="#E5E5E5" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 9pt"><? print $p3_space ?>
+                        </font>&nbsp;</td>
+                        <td width="75" bgcolor="#F0F0F0" style="text-decoration: none; border: medium none">
+                        <font face="Tahoma" style="font-size: 9pt"><? print $p3_transfer ?></font>&nbsp;</td>
+                        <td width="64" bgcolor="#006699" style="text-decoration: none; border: medium none"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF" size="2"><b>
+                        $<? print $p3_price ?></b></font></td>
+                        <td width="87" style="text-decoration: none; border: medium none"> <div align="center"> 
+                            <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                              <input type="hidden" name="cmd" value="_xclick-subscriptions">
+                              <input type="hidden" name="business" value="<? print $paypal_email ?>">
+                              <input type="hidden" name="item_name" value="Advanced Monthly Hosting Plan at <? print $yoursite ?>">
+                              <input type="hidden" name="return" value="http://www.<? print $yoursite ?>/signup_thanks.php">
+                              <input type="hidden" name="cancel_return" value="http://www.<? print $yoursite ?>">
+                              <input type="hidden" name="no_note" value="1">
+                              <input type="hidden" name="currency_code" value="USD">
+                              <p>
+                              <input type="image" src="images/pay2.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!" width="73" height="44" style="text-decoration: none; border: medium none">
+                              <input type="hidden" name="a3" value="$<? print $p3_price ?>">
+                              <input type="hidden" name="p3" value="1">
+                              <input type="hidden" name="t3" value="M">
+                              <input type="hidden" name="src" value="1">
+                              <input type="hidden" name="sra" value="1">
+                              </p>
+                            </form>
+                          </div></td>
+                      </tr>
+                      </table>
+                  </div></td>
+                                                                      </tr>
+                                                                      <tr>
+                                                                        <td width="100%" style="text-decoration: none; border: medium none">&nbsp;</td>
+                                                                      </tr>
+                                                                    </table>
+                                                                    </center>
+                                                                  </div>
+                                                                  </td>
+                                                                </tr>
+                                              <tr>
+                                                                  <td width="50%" height="18" style="text-decoration: none; border: medium none">
+                                                                  </td>
+                                                                  <td width="50%" height="18" style="text-decoration: none; border: medium none">
+                                                                  </td>
+                                                                </tr>
+											</tbody></table></div>
+																					</td>
+																				</tr>
+																				</tbody></table>
+																		</div>
+																		</td>
+																	</tr>
+																	<tr>
+																		<td>
+																		<p style="text-align: center;" align="center">
+																		<img src="images/logobot.jpg" border="0" height="70" width="535"></p></td>
+																	</tr>
+																	</tbody></table>
+															</div>
+															</td>
+														</tr>
+													</tbody></table>
+												</div>
+												</td>
+											</tr>

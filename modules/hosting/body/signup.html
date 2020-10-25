@@ -1,0 +1,88 @@
+<?php
+
+require_once "../template/config.php";
+
+?>
+
+<?php
+if ($_POST['name'] != "" && $_POST['contact'] && $_POST['paypal'] && $_POST['domain'] && $_POST['username'] && $_POST['password'] ) {
+$subject="You Have A New Customer Sign-Up!";
+$name=$_POST['name'];
+$address=$_POST['address'];
+$phone=$_POST['phone'];
+$contact=$_POST['contact'];
+$paypal=$_POST['paypal'];
+$domain=$_POST['domain'];
+$username=$_POST['username'];
+$password=$_POST['password'];
+$comments=$_POST['comments'];
+$ip=$_SERVER["REMOTE_ADDR"];
+$host = gethostbyaddr($_SERVER['REMOTE_ADDR']);
+$host = $ip.".".$host;
+$mon=date(m);
+$day=date(j);
+$year=date(y);
+$hour=date(g);
+$min=date(i);
+$sec=date(s);
+$hour=$hour-2;
+if($hour<=0) { $hour+=12; }
+$ts = "$hour:$min:$sec on $day/$mon/$year";
+
+
+$to="$contact_email";
+
+$body="
+
+Your Name = $name
+
+Address = $address
+
+Phone = $phone
+
+Contact E-Mail Address = $contact
+
+Paypal E-Mail Address = $paypal
+
+Your Domain Name = $domain
+
+Requested User Name = $username
+
+Requested Password = $password
+
+Additional Comments = $comments
+
+
+Host: $host
+Time: $ts";
+
+$email = "From: $site_title Sign-up Form <$to>";
+mail($to, $subject, $body, $email);
+?>
+
+<?
+include "../../mainfile.php";
+require XOOPS_ROOT_PATH."/header.php";
+include "header.php";
+require_once "signup_pay.html";
+$xoopsOption['show_rblock'] = 1;
+require XOOPS_ROOT_PATH."/footer.php";
+?>
+
+
+
+<?php
+} else {
+?>
+
+<?
+include "../../mainfile.php";
+require XOOPS_ROOT_PATH."/header.php";
+include "header.php";
+require_once "body/signup_error.html";
+$xoopsOption['show_rblock'] = 1;
+require XOOPS_ROOT_PATH."/footer.php";
+?>
+<?
+}
+?>

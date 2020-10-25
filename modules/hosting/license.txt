@@ -1,0 +1,3 @@
+license="Paste Paypal ID Here"
+granted_by=gethostedhere.com
+granted_Email=admin@gethostedhere.com

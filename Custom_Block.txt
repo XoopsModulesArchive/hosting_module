@@ -1,0 +1,17 @@
+<ul>
+<meta http-equiv="Content-Type" content="text/html; charset=unicode">
+<li>
+<div align="left"><a href="{X_SITEURL}modules/hosting/hosting.php">Hosting Plans</a></div>
+<li>
+<div align="left"> 
+<a href="{X_SITEURL}modules/hosting/domains.php">Domain Names</a></div>
+<li>
+<div align="left">                       
+<a href="{X_SITEURL}modules/hosting/cpanel.php">Control Panels</a></div>
+<li>
+<div align="left">                       
+<a href="{X_SITEURL}modules/tutorials/">Tutorials</a></div>
+<li>
+<div align="left">                       
+<a href="{X_SITEURL}modules/smartfaq">FAQ's</a></div></li>
+</ul>
